@@ -135,6 +135,36 @@
             <!-- Embed form or something else here-->
        <div class="eg-embed-2eMJe5vfh"></div>
                <!-- where it ends --> 
+    <section>
+        10%
+        <button
+            class="button"
+            onclick="window.dispatchEvent(new CustomEvent('eg-custom-event'))">
+                Trigger eg-custom-event
+        </button>
+    </section>
+    <section>
+        20%
+        <div class="wrapper">
+            <div class="click-class button" style="background-color: #84ccd1;">
+                trigger 'click-class'
+            </div>
+            <div
+                id="click-id"
+                class="button"
+                style="background-color: #d796c2;"
+            >
+                trigger 'click-id'
+            </div>
+            <div
+                data-test="custom"
+                class="button"
+                style="background-color: #add796;"
+            >
+                trigger '[data-test="custom"]'
+            </div>
+        </div>
+    </section>
     <!-- Signup-->
     <section class="contact-section bg-black">
         <div class="container px-4 px-lg-5">
